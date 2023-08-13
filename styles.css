@@ -1,0 +1,108 @@
+* {
+
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  background-color: #575555;
+}
+
+body {
+  margin-bottom: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.testimotionals {
+  width: 350px;
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 50px;
+
+}
+
+
+.testimotionals .card {
+  border-radius: 25px;
+  position: relative;
+  overflow: hidden;
+  width: 350px;
+  margin: 0 auto;
+  background: #222222;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  align-items: center;
+  box-shadow: 0 10px 40px rgba(94, 94, 94, 0.5);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: repeat(1, 300px);
+  grid-auto-rows: 300px;
+  grid-auto-columns: 300px;
+  text-align: center;
+}
+
+.testimotionals .card .layer {
+  z-index: 1;
+  position: absolute;
+  top: calc(100% - 2px);
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background: linear-gradient(to left, rgb(8, 67, 85), rgb(92, 223, 247));
+  transition: 0.9s;
+
+}
+
+.testimotionals .card .content {
+  z-index: 2;
+  position: relative;
+}
+
+.testimotionals .card:hover .layer {
+  top: 0;
+}
+
+.testimotionals .card .content p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+
+}
+
+.testimotionals .card .content .image {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 40%;
+  overflow: hidden;
+  border: 4px solid white;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+
+}
+
+.testimotionals .card .content .details h2 {
+  font-size: 18px;
+  color: white;
+}
+
+.testimotionals .card .content .details h2 span {
+  font-size: 18px;
+  color: rgb(156, 154, 28);
+  transition: 0.9s;
+}
+
+.testimotionals .card:hover .content .details h2 span {
+  color: white;
+  position: relative;
+}
+button {
+  margin: 10px;
+  height: 30px;
+  width: 100px;
+  border-radius: 10px;
+}
